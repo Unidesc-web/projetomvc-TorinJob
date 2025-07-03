@@ -1,0 +1,48 @@
+﻿@{
+    ViewData["Title"] = "Página Inicial";
+}
+
+<section class="hero-section text-center text-white">
+    <div class="hero-content">
+        <h1 class="display-4 fw-bold">Bem-vindo à Lanchonete do Torin!</h1>
+        <p class="lead my-4">
+            Os lanches mais saborosos da cidade, feitos com ingredientes frescos e muito carinho.
+        </p>
+        <p>
+            <a asp-controller="Lanche" asp-action="List" class="btn btn-warning btn-lg fw-bold">Ver o Cardápio</a>
+        </p>
+    </div>
+</section>
+
+<div class="container mt-5">
+    <div class="row text-center">
+        <h2 class="mb-4">Nossos Destaques</h2>
+
+        <div class="col-md-4">
+            <div class="card shadow-sm mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Qualidade Garantida</h5>
+                    <p class="card-text">Só usamos ingredientes frescos e selecionados para garantir o melhor sabor.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow-sm mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Preparo Rápido</h5>
+                    <p class="card-text">Seu pedido fica pronto em minutos, sem comprometer a qualidade.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow-sm mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Ambiente Aconchegante</h5>
+                    <p class="card-text">Um lugar perfeito para relaxar e saborear um ótimo lanche com amigos.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

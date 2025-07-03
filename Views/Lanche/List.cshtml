@@ -1,0 +1,27 @@
+﻿@model IEnumerable<Lanche>
+
+@{
+    ViewData["Title"] = "Cardápio";
+}
+
+<div class="text-center">
+    <h2>Confira nosso delicioso cardápio</h2>
+</div>
+
+<div class="row">
+    @foreach (var lanche in Model)
+    {
+        <div class="col-sm-6 col-md-4">
+            <div class="card my-3 shadow-sm h-100">
+                
+                <img src="@lanche.ImagemUrl" class="card-img-top" alt="Imagem do @lanche.Nome" style="height: 250px; object-fit: cover;">
+
+                <div class="card-body d-flex flex-column">
+                    <h4 class="card-title text-primary">@lanche.Nome</h4>
+                    <p class="card-text">@lanche.DescricaoCurta</p>
+                    <h5 class="card-text text-danger mt-auto fw-bold">@lanche.Preco.ToString("c")</h5>
+                </div>
+            </div>
+        </div>
+    }
+</div>
